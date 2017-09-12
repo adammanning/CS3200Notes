@@ -1,0 +1,13 @@
+Tools to Build User Interface in Web Browser
+-------------------------------------------------
+
+DOM (Document Object Model): In-memory version of what we see on a page
+	Query: Look for a specific element in the DOM
+	Element: Tag and its content
+	Insert: Provide new content
+	Modify: Change properties of an object (size, color, content, etc.)
+
+JavaScript: Scripting language commonly used in web browsers to allow the user to interact with the DOM
+	User Event: Something that occurs while the page is running and comes from the user
+	
+CSS: Language to change appearance of content using selectors (ids, classes, etc.)

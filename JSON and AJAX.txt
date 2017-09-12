@@ -1,0 +1,5 @@
+JSON: JavaScript Object Notation
+AJAX: Asynchronous JavaScript and JSON[XML]
+	XMLHTTPRequest(XHR)
+	Fetch <- Preferred way
+	myjson.com
