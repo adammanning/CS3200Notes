@@ -1,0 +1,11 @@
+5 RESTful Actions
+  Actions.........Descriptions............................................Operand
+  List            - Create a list messages                                - Collection
+  Retrieve        - Get a representation of message in appropriate format - Member
+  Create          - A new resource added to collection                    - Collection
+  Update, Replace - Modify an existing message                            - Member
+  Delete          - Remove an existing message                            - Member
+
+Message Resource
+  Collection Path:  /messages
+  Member Path:      /messages/ID
