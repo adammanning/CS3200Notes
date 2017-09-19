@@ -1,0 +1,4 @@
+CORS - Cross Origin Resource Sharing
+
+Same-Origin Policy
+  Scripts can only make request to the server they came from
