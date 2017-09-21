@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Doing POST Things</title>
+  </head>
+
+  <body>
+    <h1>Here is a button that will post</h1>
+    <button id="post-button">Send a POST?</button>
+    <div id="responseStatus"></div>
+
+    <script>
+      (
+        function iife()
+        {
+          console.log("Working and stuff", fetch);
+
+          function checkStatus(response)
+          {
+            if(response.status >= 200 && response.status < 300)
+            {
+              return response;
+            }
+            else
+            {
+              var error = new Error(response.statusText); // statusText is a string
+                  error.response = response.clone();
+                  throw error;
+            }
+          }
+
+          function handlePost()
+          {
+            fetch
+            (
+              'http://localhost:8080/potatoes',
+              {
+                body: encodedString,
+                method: 'POST',
+                headers:
+                {
+                  'Content-Type': 'application/x-www-form-urlencoded'
+                }
+              }
+            )
+            .then(checkStatus)
+            .catch(error => console.log(error))
+          }
+
+          var postButton = document.getElementById("post-button");
+              postButton.addEventListener("click", handlePost);
+
+          var encodedString = "color=" + encodeURIComponent("Reddish potatoes");
+          console.log(encodedString);
+        }()
+      );
+    </script>
+  </body>
+</html>

@@ -20,7 +20,7 @@ class MyHandler(BaseHTTPRequestHandler):
 
         if self.path == "/pandas":
             self.send_header("Content-Type", "text/html") # "text/html" is a MIME type
-            self.send_header("Access-Control-Allow_Origin", "*") # Allow everyone to access data
+            self.send_header("Access-Control-Allow-Origin", "*") # Allow everyone to access data
             self.end_headers() # Tell python when your done with headers, even if there aren't any
             self.wfile.write(bytes("<strong>PANDAS!!</strong>", "utf-8"))
 
@@ -31,6 +31,7 @@ class MyHandler(BaseHTTPRequestHandler):
             print("JSON STRING:", json_string)
 
             self.send_header("Content-Type", "application/json") # "text/html" is a MIME type
+            self.send_header("Access-Control-Allow-Origin", "*") # Allow everyone to access data
             self.end_headers() # Tell python when your done with headers, even if there aren't any
             self.wfile.write(bytes(json_string, "utf-8"))
 
@@ -64,9 +65,8 @@ class MyHandler(BaseHTTPRequestHandler):
 
             self.send_response(201)
             self.send_header("Content-Type", "text/html")
-            self.send_header("Access-Control-Allow_Origin", "*") # Allow everyone to access data
+            self.send_header("Access-Control-Allow-Origin", "*") # Allow everyone to access data
             self.end_headers()
-            self.wfile.write(bytes("<strong>POST DONE</strong>", "utf-8"))
 
 def main():
     listen = ("127.0.0.1", 8080) # (Host, Port)

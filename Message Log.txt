@@ -1,0 +1,5 @@
+Work on server first
+Work on HTML or CSS if need a break
+Then do JS
+
+Save data to simple text file - review working with files in Python
