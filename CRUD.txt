@@ -1,0 +1,39 @@
+CRUD
+  * Create
+  * Read
+  * Update
+  * Delete
+----------
+
+Wizard:
+  name
+  age
+  hat_color
+  staff_length
+  height
+----------
+
+Database
+  * A piece of software used to manage data in a convenient way
+  * Table
+    * Rows/Records
+    * Columns/Fields
+    * Keys
+	* Schema
+		* A structure of a database table
+	* Data
+
+    id	name			age		hat_color		staff_length	height
+    1		Gandalf		1500	white				5							6.1
+    2		Felix			30		blue				4							5.8
+    3		Hariet		435		yellow			6							4
+----------
+
+SQL
+  * Structured Query Language
+  * A programming language used to interact with a database
+----------
+
+SQLite
+	* Basic database software
+	* Built into Python

@@ -21,8 +21,8 @@ class MyHandler(BaseHTTPRequestHandler):
         if self.path == "/pandas":
             self.send_header("Content-Type", "text/html") # "text/html" is a MIME type
             self.send_header("Access-Control-Allow-Origin", "*") # Allow everyone to access data
-            self.end_headers() # Tell python when your done with headers, even if there aren't any
-            self.wfile.write(bytes("<strong>PANDAS!!</strong>", "utf-8"))
+            self.end_headers() # Tell python when you're done with headers, even if there aren't any
+            self.wfile.write(bytes("<h1>PANDAS!!</h1>", "utf-8"))
 
         elif self.path == "/potatoes":
 
@@ -32,12 +32,12 @@ class MyHandler(BaseHTTPRequestHandler):
 
             self.send_header("Content-Type", "application/json") # "text/html" is a MIME type
             self.send_header("Access-Control-Allow-Origin", "*") # Allow everyone to access data
-            self.end_headers() # Tell python when your done with headers, even if there aren't any
+            self.end_headers() # Tell python when you're done with headers, even if there aren't any
             self.wfile.write(bytes(json_string, "utf-8"))
 
         else:
             self.send_header("Content-Type", "text/html") # "text/html" is a MIME type
-            self.end_headers() # Tell python when your done with headers, even if there aren't any
+            self.end_headers() # Tell python when you're done with headers, even if there aren't any
             self.wfile.write(bytes("<strong>Hello</strong>", "utf-8")) # Create body (Text, character set)
 
         # self.wfile is a file object. Not writing to a file, but the buffering benefits
