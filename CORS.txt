@@ -2,3 +2,26 @@ CORS - Cross Origin Resource Sharing
 
 Same-Origin Policy
   Scripts can only make request to the server they came from
+
+Simple Request
+  Methods:
+    GET
+    HEAD
+    POST
+
+  Content-Types:
+    application/x-www-form-urlencoded
+    multipart/form-data
+    text/plain
+
+Preflighted Request
+  Make sure everything is okay with the request before sending the actual request
+  Sends an OPTIONS request - called the preflight request - first and then sends the original request - called the preflighted request.
+
+  Methods:
+    PUT
+    DELETE
+    CONNECT
+    OPTIONS
+    TRACE
+    PATCH
