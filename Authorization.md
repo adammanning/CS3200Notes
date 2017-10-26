@@ -2,6 +2,9 @@
 	1. A human being who is using the application
 
 0. **Registration**
+	0. Creating an account
+	0. Provide a username/email
+	0. Provide and confirm password
 
 0. **Authentication**
 	0. Verifying that a person is who they say you are
@@ -10,9 +13,13 @@
 		0. Text Message
 		0. Fingerprint
 		0. Many more
+	0. Sign In
+		0. What is your id?
+		0. What is your password?
+	0. Only a person who has registered should be able to authenticate
 
 0. **Authorization**
-	0. Making sure you have permission to do what you're trying to do
+	0. Do you have permission to do what you're trying to do
 
 0. **Stateless**
 	0. HTTP is a stateless protocol
