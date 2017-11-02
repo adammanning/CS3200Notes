@@ -3,11 +3,20 @@
 
 1. **Registration**
 	- Creating an account
-	- Provide a username/email
-	- Provide and confirm password
+	1. Things needed to Register
+		1. User name or email
+			- Something the user knows
+			- Unique id
+		1. Encrypted Password
+			- Secret
+			- Something the user knows
+			- <u>Not</u> guessable
+		1. Name, etc.
+			- Enhances the user's experience
 
 1. **Authentication**
 	- Verifying that a person is who they say you are
+	- Verification of identity
 	- Ways of Authentication
 		1. Password
 		1. Text Message
@@ -31,7 +40,7 @@
 	- Keeper of cookies
 
 1. **Session**
-	- Amount of time that a user
+	- Consecutive amount of time that a user spends using an application
 	- Some information stored in order for the server to know who you are
 
 1. **Cookie**
@@ -43,3 +52,20 @@
 1. **HACK**
 	- Cookies allow us to have a session
 	- Not so much a hack, rather it's more like a technique
+
+"There are two hard things in computer science..."
+
+## Resources
+- User
+- Session
+
+## PassLib
+Use PassLib for password encryption
+
+Install:
+- pip install passlib[bcrypt]
+
+
+Usage:
+- from passlib.hash import bcrypt
+- hash = bcrypt.hash("penguin") # ONLY USED FOR REGISTERING
