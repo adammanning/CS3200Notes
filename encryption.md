@@ -9,5 +9,5 @@
 	- Used for communication
 
 ### Why do we encrypt data if everyone has access to the hashing algorithm(s)?
-- We 'sprinkle some salt' into each password to make it much hard to guess
+- We 'sprinkle some salt' into each password to make it much harder to guess
 - Each encrypted password is stored with a unique salt
